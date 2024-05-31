@@ -1,0 +1,410 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 0 17px;
+}
+.nav-ul  , .nav-ul1{
+    list-style: none;
+    display: flex;
+    gap: 23px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: gray;
+    width: 100%;
+    height: 40px;
+    padding: 0 17px;
+}
+.nav .nav-ul1 a{
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    cursor: pointer;
+}
+.nav .nav-ul1 a::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #ff8500;
+    margin: 12px 0;
+    left: 0;
+    top: 10px ;
+    transition: 0.3s;
+}
+.nav .nav-ul1 a:hover:after{
+    width: 100%;
+    color:  #ff8500;
+    
+}
+.nav .nav-ul1 a:hover{
+    color: black;
+}
+.nav::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 0;
+    box-shadow: -23px -4px 8px 1px rgb(197, 196, 196);
+    bottom: 0;
+    
+}
+.hero {
+    position: relative;
+    height: calc( 100vh - 40px);
+}
+.hero .imgs img{
+    position: absolute;
+    right: 0;
+   
+
+}
+/* .hero .imgs .img1{
+    z-index: 1;
+}
+.hero .imgs .img{
+    z-index: 2;
+}
+.hero .imgs .img3{
+    z-index: 3;
+} */
+.hero .AM-hero{
+    display: flex;
+    
+   
+}
+.hero .AM-hero .AM-h3p{
+    width: 47%;
+    padding: 9% 3%;
+}
+.hero .hero-fotter .img-hero-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.hero .imgs .img1{
+    width: 10%;
+}
+.hero .imgs .img2{
+    bottom: 5%;
+    z-index: 9;
+
+}
+.hero .imgs .img3{
+    bottom: 23%;
+    z-index: 10;
+    right: 8%;
+}
+.hero .hero-fotter .hero-icon{
+    display: flex;
+    gap:8px;
+    position: absolute;
+    bottom: 2%;
+}
+.hero .hero-fotter .hero-icon a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff8500;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+.hero .hero-fotter .hero-icon .icon-border{
+    position: relative;
+    width: 30px;
+    height:30px ;
+    border: 1px solid white; 
+    border-radius: 50%;
+    background-color: white;
+}
+.hero .hero-fotter .hero-icon .icon-border:hover{
+    background-color: #ff8500;
+    transition: .3s;
+}
+.hero .hero-fotter .hero-icon .icon-border:hover a{
+    color: white;
+    transition: .3s;
+}
+.hero .hero-fotter p{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    color: white;
+}
+.hero .AM-hero .imgs .start{
+    color: #ff8500;
+    position: absolute;
+    top: 56%;
+    font-size: xxx-large;
+    right: 25%;
+
+}
+.hero .AM-hero .AM-h3p h3{
+    color: #ff8500;
+}
+/* .services{
+    display: flex;
+    
+    
+    
+    width: 100%;
+    
+} */
+.img-card1 , .img-card2 {
+   width: 40%; 
+   z-index: 0;
+   margin-top: 120px;
+   
+}
+.services .card1{
+    z-index: 1;
+    border-radius: 10%;
+    box-shadow: 2px 1px 8px 1px rgb(197, 196, 196);
+    
+    
+}
+.container1{
+    padding: 60px 17px;
+}
+.row{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.hosting{
+    background-color: #282828;
+    padding: 60px 17px;
+    
+}
+.hosting .card1 , .hosting .card2 , .hosting .card3 , .hosting .card4{
+    position: relative;
+    overflow: hidden;
+}
+.hosting .card1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5%;
+    background-color: #ff8500;
+    border-radius: 2px;
+}
+.hosting .card1 .basic{
+    border: 2px solid #ff8500;
+    font-size: 17px;
+    color: #ff8500;
+    font-weight: bold;
+}
+.hosting .card1 .basic:hover{
+    background-color: #ff8500;
+    color: white;
+}
+.hosting .card2::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5%;
+    background-color: #a513ff;
+    border-radius: 2px;
+}
+.hosting .card2 .pro{
+    border: 2px solid #a513ff;
+    font-size: 17px;
+    color: #a513ff;
+    font-weight: bold;
+}
+.hosting .card2 .pro:hover{
+    background-color: #a513ff;
+    color: white;
+}
+.hosting .card3::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5%;
+    background-color: #71aa27;
+    border-radius: 2px;
+}
+.hosting .card3 .Business{
+    border: 2px solid #71aa27;
+    font-size: 17px;
+    color: #71aa27;
+    font-weight: bold;
+}
+.hosting .card3 .Business:hover{
+    background-color: #71aa27;
+    color: white;
+}
+
+.hosting .card4::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5%;
+    background-color: #1d5edd;
+    border-radius: 2px;
+}
+.hosting .card4 .Enterprise{
+    border: 2px solid #1d5edd;
+    font-size: 17px;
+    color: #1d5edd;
+    font-weight: bold;
+}
+.hosting .card4 .Enterprise:hover{
+    background-color: #1d5edd;
+    color: white;
+}
+.hosting .p , .hosting .h3 , .hosting .p1{
+    color: white; 
+    text-align: center;
+    
+    
+}
+.hosting .p{
+    padding-top: 20px ;
+}
+.container2{
+    padding: 0 12px ;
+}
+.footer{
+    background-color: #282828;
+   position: relative;
+}
+.footer .card{
+    background-color: #282828;
+   color: white;
+   border: none;
+}
+.footer  a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.footer .footerImg{
+    width: 50%;
+    padding: 20px 0;
+}
+.footer .card .card1{
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+.footer .p{
+    color: white;
+}
+.footer::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 70%;
+    background-color: white;
+    bottom: 4%;
+    right: 0;
+}
+.nav .hum-icon{
+    display: none;
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+    .hosting .card3 p{
+        margin-bottom:0px ;
+    }
+    .footer::after{
+        width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .footer::after{
+        width: 50%;
+        bottom: 9px;
+    }
+    .footer .card .card1{
+        padding-right: 0;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .nav .nav-ul1{
+    gap: 9px;
+    padding: 0;
+   
+   } 
+   .services .img-card1 , .services .img-card2{
+    display: none;
+   }
+   .footer::after{
+    width: 40%;
+    bottom: 9px;
+}
+}
+@media (min-width: 300px) and (max-width: 575px){
+.nav{
+    height: 50px;
+}
+.nav-ul{
+    gap: 7px;
+}
+
+
+.hero .AM-hero .AM-h3p {
+    width: 100%;
+    
+}
+.hero .imgs .img2{
+    width: 25%;
+}
+.hero .imgs .img3{
+    width: 34%;
+    bottom: 58px;
+}
+.hero .AM-hero .imgs .start {
+    top: 80%;
+    font-size: x-large;
+    right: 34%;
+}
+.hero .hero-fotter .hero-icon {
+    display: flex;
+    flex-direction: column;
+    bottom: 7%;
+}
+.hero .hero-fotter p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 12px;
+    bottom: -4px;
+}
+.footer::after{
+    width: 100%;
+    bottom: 50px;
+}
+.services .img-card1 , .services .img-card2{
+    display: none;
+   }
+.services .cardImg{
+    opacity: .5;
+}
+.nav .nav-ul1{
+    display: none;
+}
+.nav .nav-ul .li{
+    font-size: 13px;
+    padding-top: 4px;
+}
+.hero .imgs .img1 {
+    width: 20%;
+    bottom: 0;
+}
+.nav .hum-icon{
+    display: block;
+    position: absolute;
+    top: 8px;
+}
+}
+
